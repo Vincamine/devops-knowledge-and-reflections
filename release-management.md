@@ -1,0 +1,5 @@
+# Versioning
+When it comes to software (applications, services etc.) that support a public programmable interface (API) it is important to make it clear to clients what each version means and how it may impact their exiting code.<br>
+Typically the goal of any software that has a public API is to avoid breaking existing clients. At the same time, we would like our clients to have a clear understanding of what changes are included by each release and what the effect of moving from the version of our software used now to a newer/different version.<br>
+We use the term backward compatible to mean that clients relying on our public API and its behavior will continue to function as they did if the only code change they make is to update their dependency on us to the new version. Put another way, if it worked before upgrading it better work after upgrading without any further changes on the clients side. Similarly a backwards incompatible change is one that is not backwards compatible.<br>
+Semantic Versioning (SemVer) 2.0 was developed as a versioning mechanism to avoid dependency hell.
